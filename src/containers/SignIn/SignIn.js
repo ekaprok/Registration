@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './App.css';
 
-class SignIn extends Component {
+export default class SignIn extends Component {
+
   render() {
     return (
       <div className="container">
@@ -10,43 +10,28 @@ class SignIn extends Component {
             <input
               className="input-register"
               type="email"
-              value={this.state.value}
               placeholder='Email'
-              onChange={this.handleChange}
+              value={this.props.currentEmail}
             />
             <input
               className="input-register"
               type="password"
-              value={this.state.value}
               placeholder='Password'
-              onChange={this.handleChange}
+              value={this.props.currentPassword}
             />
             <input
               className="sign-button"
               type="submit"
               value="Sign In"
-              onChange={this.handleChange}
+              onChange={this.submit}
             />
-            <button className="next-button">Next</button>
-            <p className="message"> Dont Have an Account? <button className="goto-button">Register</button></p>
+
+            <p className="message"> Dont Have an Account?&nbsp;
+              <button onClick={this.props.nextStep} className="goto-button">Register</button>
+            </p>
       </div>
     )
   }
+
+
 }
-
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      page: 0
-    }
-  }
-
-  render() {
-    return (
-        <SignIn />
-    );
-  }
-}
-
-export default App;

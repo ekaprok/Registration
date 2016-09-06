@@ -1,13 +1,13 @@
 .container {
-  font-family: Arial;
+  font-family: Open Sans;
   color: #666666;
   width: 300px;
   padding: 20px;
   border-radius: 3px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
-  border-radius: 2px;
-  box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 16px 33px 0px rgba(0,0,0,0.16);
+  border-radius: 9px;
 }
 
 .titleOne {
@@ -40,14 +40,12 @@
   text-align: center;
   background-color: #009900;
   border-color: #009900;
-  border-radius: 5px;
+  border-radius: 7px;
+  border: solid;
 }
 
 .sign-button:hover {
-  background-color: white;
-  color: #009900;
-  border-color: #009900;
-  border-width: 1px;
+  background-color: #277325;
 }
 
 .message {
@@ -78,9 +76,11 @@
   background-color: white;
   border-color: #cccccc;
   border-width: 1px;
-  border-radius: 5px;
+  border-radius: 7px;
+  border: solid;
+  border-width: 1px;
 }
 
 .next-button:hover {
-  background-color: #e6e6e6;
+  background-color: #F9F9F9;
 }
